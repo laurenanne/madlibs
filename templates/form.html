@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <form action="/story" class="form-content">
+       
+        {% for word in prompts%}
+        <div class=form-content>
+        <label for={{word}}>{{word}}:</label>
+        <input class ="form_input" type="text" name={{word}}>
+        </div>
+        {%endfor%}
+        
+        <button>Submit</button>
+     
+    </form>
+{% endblock %}

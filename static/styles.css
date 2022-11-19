@@ -1,0 +1,20 @@
+body{
+    margin:40px
+}
+
+form.form-content{
+    display: table;   
+}
+
+div.form-content{
+    display: table-row;   
+}
+
+label, input{
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
